@@ -7,7 +7,6 @@ func init() {
 	DefaultHeaders["authority"] = "cdn152.akamai-content-network.com"
 	DefaultHeaders["accept"] = "*/*"
 	DefaultHeaders["accept-language"] = "zh-CN,zh;q=0.9"
-	DefaultHeaders["origin"] = "https://missav.com"
 	DefaultHeaders["sec-ch-ua"] = `"Not/A)Brand";v="99""=] "Google Chrome";v="115""=] "Chromium";v="115"`
 	DefaultHeaders["sec-ch-ua-mobile"] = "?0"
 	DefaultHeaders["sec-ch-ua-platform"] = `"macOS"`
