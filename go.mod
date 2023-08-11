@@ -1,6 +1,7 @@
 module github.com/canhlinh/hlsdl
 
 require (
+	github.com/beacon007/hlsdl/base v0.0.0-00010101000000-000000000000
 	github.com/fatih/color v1.7.0 // indirect
 	github.com/grafov/m3u8 v0.11.1
 	github.com/mattn/go-colorable v0.1.4 // indirect
@@ -10,3 +11,5 @@ require (
 )
 
 go 1.13
+
+replace github.com/beacon007/hlsdl/base => ./base

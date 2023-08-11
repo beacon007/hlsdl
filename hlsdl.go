@@ -3,6 +3,7 @@ package hlsdl
 import (
 	"errors"
 	"fmt"
+	"github.com/beacon007/hlsdl/base"
 	"io"
 	"log"
 	"net/http"
@@ -52,7 +53,7 @@ func New(hlsURL string, headers map[string]string, dir string, workers int, enab
 	hlsdl := &HlsDl{
 		hlsURL:    hlsURL,
 		dir:       dir,
-		client:    &http.Client{},
+		client:    base.DefaultHttpClient,
 		workers:   workers,
 		enableBar: enableBar,
 		headers:   headers,
